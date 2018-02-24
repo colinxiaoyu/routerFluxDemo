@@ -13,7 +13,7 @@ export default class Page2 extends React.Component {
       <View style={styles.container}>
         <TouchableOpacity
           onPress={()=>{
-            Actions.popTo('page1');
+            Actions.reset('pages');
           }}>
           <Text>Page2</Text>
         </TouchableOpacity>
