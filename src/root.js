@@ -12,6 +12,7 @@ import Page3 from './page/page3';
 import Tab1 from './tabs/tab1';
 import Tab2 from './tabs/tab2';
 import TabIcon from './component/tab-icon';
+import store from './store/index';
 
 
 import {
@@ -49,6 +50,14 @@ const reducerCreate = params => {
   };
 };
 
+// const wrapBy = params=> {
+//   const stores = store;
+//   return (state, action) => {
+//     return stores(state, action);
+//
+//   }
+// };
+
 const getSceneStyle = () => ({
   backgroundColor: '#F5FCFF',
   shadowOpacity: 1,
@@ -59,7 +68,7 @@ const prefix = Platform.OS === 'android' ? 'my://my/' : 'my://';
 
 const Root = () => {
   return (
-    <Router createReducer={reducerCreate} getSceneStyle={getSceneStyle} >
+    <Router createReducer={reducerCreate} getSceneStyle={getSceneStyle}>
       <Overlay key="overlay">
         <Modal key="modal">
           <Lightbox key="loading">
@@ -77,9 +86,14 @@ const Root = () => {
             <Scene key="page2" component={Page2} title="page2"/>
           </Lightbox>
 
-          <Tabs key="tabbar"  swipeEnabled showLabel={false} tabBarStyle={styles.tabBarStyle} activeBackgroundColor="white" inactiveBackgroundColor="rgba(255, 0, 0, 0.5)" tabBarPosition="bottom">
-            <Scene key="tab1" hideNavBar component={Tab1} title="Tab1" image={require('./img/chat.png')} imageCol={require('./img/chat_color.png')} icon={TabIcon} onRight={() => alert('Right button')} rightTitle="Right"/>
-            <Scene key="tab2"  component={Tab2} title="Tab2" image={require('./img/explore.png')} imageCol={require('./img/explore_color.png')} icon={TabIcon} onRight={() => alert('Right button')} rightTitle="Right"/>
+          <Tabs key="tabbar" swipeEnabled showLabel={false} tabBarStyle={styles.tabBarStyle}
+                activeBackgroundColor="white" inactiveBackgroundColor="rgba(255, 0, 0, 0.5)" tabBarPosition="bottom">
+            <Scene key="tab1" hideNavBar component={Tab1} title="Tab1" image={require('./img/chat.png')}
+                   imageCol={require('./img/chat_color.png')} icon={TabIcon} onRight={() => alert('Right button')}
+                   rightTitle="Right"/>
+            <Scene key="tab2" component={Tab2} title="Tab2" image={require('./img/explore.png')}
+                   imageCol={require('./img/explore_color.png')} icon={TabIcon} onRight={() => alert('Right button')}
+                   rightTitle="Right"/>
           </Tabs>
         </Modal>
       </Overlay>
