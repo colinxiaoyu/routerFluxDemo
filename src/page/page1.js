@@ -37,6 +37,11 @@ class Page1 extends React.Component {
           onPress={()=>this.onBtnPress()}
           title="显示"
           color="#841584"/>
+
+        <Button
+          onPress={()=>Actions.reset('tabbar')}
+          title="进入Tabs"
+          color="#841584"/>
       </View>
     )
   }
