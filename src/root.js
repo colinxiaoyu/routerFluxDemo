@@ -50,6 +50,8 @@ const reducerCreate = params => {
   };
 };
 
+// 个人从源码中觉得，wrapBy是一个添加中间件的修饰函数，
+// 参照 NavigationStore 中386行，仅仅是对导航器的按钮做修饰
 // const wrapBy = params=> {
 //   const stores = store;
 //   return (state, action) => {
