@@ -2,9 +2,10 @@
  * Created by puxiang on 2018/2/24.
  */
 import React from 'react';
-import {View, Text,StyleSheet,TouchableOpacity} from 'react-native';
+import {View, Text,StyleSheet,TouchableOpacity,Button} from 'react-native';
 import {Actions} from 'react-native-router-flux';
-
+import store from '../store/index';
+import {changeText} from '../store/action_page1';
 
 export default class Page2 extends React.Component {
 
@@ -17,8 +18,16 @@ export default class Page2 extends React.Component {
           }}>
           <Text>Page2</Text>
         </TouchableOpacity>
+        <Button
+          onPress={()=>this.onBtnPress()}
+          title="page2改变page1的值，就是不关联组件间通信"
+          color="#841584"/>
       </View>
     )
+  }
+
+  onBtnPress=()=>{
+    store.dispatch(changeText('你看，我就这样改变了'));
   }
 }
 
