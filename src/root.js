@@ -59,7 +59,7 @@ const prefix = Platform.OS === 'android' ? 'my://my/' : 'my://';
 
 const Root = () => {
   return (
-    <Router createReducer={reducerCreate} getSceneStyle={getSceneStyle} uriPrefix={prefix}>
+    <Router createReducer={reducerCreate} getSceneStyle={getSceneStyle} >
       <Overlay key="overlay">
         <Modal key="modal">
           <Lightbox key="loading">
@@ -77,7 +77,7 @@ const Root = () => {
             <Scene key="page2" component={Page2} title="page2"/>
           </Lightbox>
 
-          <Tabs key="tabbar"  swipeEnabled showLabel={false} tabBarStyle={styles.tabBarStyle} activeBackgroundColor="white" inactiveBackgroundColor="rgba(255, 0, 0, 0.5)">
+          <Tabs key="tabbar"  swipeEnabled showLabel={false} tabBarStyle={styles.tabBarStyle} activeBackgroundColor="white" inactiveBackgroundColor="rgba(255, 0, 0, 0.5)" tabBarPosition="bottom">
             <Scene key="tab1" hideNavBar component={Tab1} title="Tab1" image={require('./img/chat.png')} imageCol={require('./img/chat_color.png')} icon={TabIcon} onRight={() => alert('Right button')} rightTitle="Right"/>
             <Scene key="tab2"  component={Tab2} title="Tab2" image={require('./img/explore.png')} imageCol={require('./img/explore_color.png')} icon={TabIcon} onRight={() => alert('Right button')} rightTitle="Right"/>
           </Tabs>
