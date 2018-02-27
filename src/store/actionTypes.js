@@ -2,3 +2,8 @@
  * Created by puxiang on 2018/2/24.
  */
 export const CHANGETEXT = 'CHANGETEXT';
+
+
+export const FETCHING_DATA = 'FETCHING_DATA';
+export const FETCHING_DATA_SUCCESS = 'FETCHING_DATA_SUCCESS';
+export const FETCHING_DATA_FAILURE = 'FETCHING_DATA_FAILURE';
