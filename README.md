@@ -1,3 +1,3 @@
 # routerFluxDemo
 
-主要是redux-saga与react-native-router-flux相互结合，例子比较完整，改一改可以商用
+主要是redux-saga与react-native-router-flux相互结合，例子比较完整
