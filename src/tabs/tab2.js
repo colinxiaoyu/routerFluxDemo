@@ -38,8 +38,37 @@ class Tab2 extends React.Component {
             ) : null
           }
         </View>
+
+        <TouchableHighlight
+          style={styles.button}
+          onPress={() => {
+            const {fetchData1} = this.props.ActionSaga1;
+            fetchData1();
+          }}>
+          <Text style={styles.buttonText}>Load Data</Text>
+        </TouchableHighlight>
+        <View style={styles.mainContent}>
+          {
+            this.props.ReducerSaga1.isFetching1 && <Text>Loading</Text>
+          }
+          {
+            this.renderPerson()
+          }
+        </View>
       </View>
     )
+  }
+
+  renderPerson = () => {
+    const person = this.props.ReducerSaga1.data1;
+    if (person === '') {
+      return null;
+    }
+    console.log('data1', person);
+    return (<View>
+      <Text>Name: {person.name}</Text>
+      <Text>Age: {person.age}</Text>
+    </View>);
   }
 }
 

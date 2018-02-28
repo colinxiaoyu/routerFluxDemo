@@ -8,3 +8,9 @@ export function fetchData() {
     type: types.FETCHING_DATA
   }
 }
+
+export function fetchData1() {
+  return {
+    type: types.FETCHING_DATA1
+  }
+}
