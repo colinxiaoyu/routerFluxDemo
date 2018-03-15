@@ -11,6 +11,7 @@ import Page3 from './page/page3';
 
 import Tab1 from './tabs/tab1';
 import Tab2 from './tabs/tab2';
+import TabCenter from './tabs/tab-center';
 import TabIcon from './component/tab-icon';
 import store from './store/index';
 
@@ -88,14 +89,20 @@ const Root = () => {
             <Scene key="page2" component={Page2} title="page2"/>
           </Lightbox>
 
-          <Tabs key="tabbar" swipeEnabled showLabel={false} tabBarStyle={styles.tabBarStyle}
-                activeBackgroundColor="white" inactiveBackgroundColor="rgba(255, 0, 0, 0.5)" tabBarPosition="bottom">
+          <Tabs key="tabbar" swipeEnabled showLabel={false} tabBarStyle={styles.tabBarStyle} lazy={true}
+                 tabBarPosition="bottom">
             <Scene key="tab1" hideNavBar component={Tab1} title="Tab1" image={require('./img/chat.png')}
                    imageCol={require('./img/chat_color.png')} icon={TabIcon} onRight={() => alert('Right button')}
+                   type={1}
                    rightTitle="Right"/>
-            <Scene key="tab2" component={Tab2} title="Tab2" image={require('./img/explore.png')}
+            <Scene key="tabcenter" component={TabCenter} title="Tab2" image={require('./img/explore.png')}
+                   imageCol={require('./img/explore_color.png')} icon={TabIcon}
+                   type={2}
+                  />
+            <Scene key="tab2" component={Tab2} title="Tab2" image={require('./img/explore.png')} type={1}
                    imageCol={require('./img/explore_color.png')} icon={TabIcon} onRight={() => alert('Right button')}
                    rightTitle="Right"/>
+
           </Tabs>
         </Modal>
       </Overlay>
