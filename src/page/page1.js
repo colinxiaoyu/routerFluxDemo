@@ -8,6 +8,7 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import * as ActionPage1 from '../store/action_page1';
 import Toast from '@remobile/react-native-toast';
+import Picker from 'react-native-picker';
 
 
 class Page1 extends React.Component {
@@ -42,6 +43,32 @@ class Page1 extends React.Component {
           onPress={()=>Actions.reset('tabbar')}
           title="进入Tabs"
           color="#841584"/>
+
+          <Button
+              onPress={()=>{
+
+
+                  Picker.init({
+                      pickerData: ['北京','南京','上海'],
+                      selectedValue: [1],
+                      pickerTitleText:'选择城市',
+                      pickerFontSize:20,
+                      pickerConfirmBtnText:'确定',
+                      pickerCancelBtnText:'取消',
+                      onPickerConfirm: data => {
+                          console.log(data);
+                      },
+                      onPickerCancel: data => {
+                          console.log(data);
+                      },
+                      onPickerSelect: data => {
+                          console.log(data);
+                      }
+                  });
+                  Picker.show();
+              }}
+              title="显示picker"
+              color="#841584"/>
       </View>
     )
   }

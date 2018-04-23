@@ -11,6 +11,7 @@
     "react": "16.2.0",
     "react-native": "0.53.3",
     "react-native-animatable": "^1.2.4",
+    "react-native-picker": "^4.3.5",
     "react-native-router-flux": "^4.0.0-beta.28",
     "react-native-scrollable-tab-view": "^0.8.0",
     "react-redux": "^5.0.7",

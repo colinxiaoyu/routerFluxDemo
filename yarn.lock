@@ -3019,6 +3019,10 @@ react-native-drawer-layout@1.3.2:
   dependencies:
     react-native-dismiss-keyboard "1.0.0"
 
+react-native-picker@^4.3.5:
+  version "4.3.5"
+  resolved "http://registry.npm.taobao.org/react-native-picker/download/react-native-picker-4.3.5.tgz#bf791dde6908028a11aacb3fdc7c6b2bdb2cd3f3"
+
 react-native-router-flux@^4.0.0-beta.28:
   version "4.0.0-beta.28"
   resolved "http://registry.npm.taobao.org/react-native-router-flux/download/react-native-router-flux-4.0.0-beta.28.tgz#1d39cf176c88d0658af03cfa80dfb4a8eb284619"

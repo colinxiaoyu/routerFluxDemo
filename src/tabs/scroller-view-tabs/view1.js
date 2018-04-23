@@ -3,7 +3,6 @@
  */
 import React from 'react';
 import {View,Text,StyleSheet} from 'react-native';
-import BottomModle from './component/bottom-modle';
 
 export default class View1 extends React.Component{
 
@@ -11,7 +10,6 @@ export default class View1 extends React.Component{
     return(
       <View style = {styles.container}>
         <Text>view1</Text>
-        <BottomModle/>
       </View>
     )
   }
