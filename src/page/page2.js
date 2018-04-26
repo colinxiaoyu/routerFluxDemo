@@ -2,7 +2,7 @@
  * Created by puxiang on 2018/2/24.
  */
 import React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity, Button,NativeModules,Platform} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity, Button, NativeModules, Platform} from 'react-native';
 import {Actions} from 'react-native-router-flux';
 import store from '../store/index';
 import {changeText} from '../store/action_page1';
@@ -54,9 +54,7 @@ export default class Page2 extends React.Component {
     }
 
     goSobot = () => {
-        if(Platform.OS ==='android'){
-            NativeModules.SobtNativeModule.startSobot();
-        }
+        NativeModules.SobtNativeModule.startSobot();
     }
 }
 

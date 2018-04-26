@@ -11,6 +11,7 @@
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import <SobotKit/SobotKit.h>
 
 @implementation AppDelegate
 
@@ -31,8 +32,13 @@
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *rootViewController = [UIViewController new];
   rootViewController.view = rootView;
-  self.window.rootViewController = rootViewController;
+  
+  _nav = [[UINavigationController alloc]initWithRootViewController:rootViewController];
+  _nav.navigationBarHidden = YES;
+  self.window.rootViewController = _nav;
   [self.window makeKeyAndVisible];
+  
+   [[ZCLibClient getZCLibClient] initSobotSDK:@"d05b795971a04c129dcc5d44b3cdd946"];
   return YES;
 }
 
