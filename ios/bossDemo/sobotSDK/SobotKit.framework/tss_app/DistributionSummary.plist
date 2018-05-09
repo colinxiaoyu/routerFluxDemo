@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>tss_app.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>A3A0238F3D3E5BB204918F251494D0E6A10F0DD4</string>
+				<key>dateExpires</key>
+				<string>2018/12/2</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>A3A0238F3D3E5BB204918F251494D0E6A10F0DD4</string>
+						<key>dateExpires</key>
+						<string>2018/12/2</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>Charts.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>C2776K4LVU</string>
+						<key>name</key>
+						<string>Vbill Payment Co., Ltd.</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>A3A0238F3D3E5BB204918F251494D0E6A10F0DD4</string>
+						<key>dateExpires</key>
+						<string>2018/12/2</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>QBImagePicker.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>C2776K4LVU</string>
+						<key>name</key>
+						<string>Vbill Payment Co., Ltd.</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>A3A0238F3D3E5BB204918F251494D0E6A10F0DD4</string>
+						<key>dateExpires</key>
+						<string>2018/12/2</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>RSKImageCropper.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>C2776K4LVU</string>
+						<key>name</key>
+						<string>Vbill Payment Co., Ltd.</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>A3A0238F3D3E5BB204918F251494D0E6A10F0DD4</string>
+						<key>dateExpires</key>
+						<string>2018/12/2</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>SwiftyJSON.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>C2776K4LVU</string>
+						<key>name</key>
+						<string>Vbill Payment Co., Ltd.</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>C2776K4LVU.com.suixingpay.xlmapp.enter</string>
+				<key>aps-environment</key>
+				<string>production</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>C2776K4LVU</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>tss_app.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>d5907bf1-0393-49f1-ab24-a75c6e2d315b</string>
+				<key>name</key>
+				<string>iOS Team Inhouse Provisioning Profile: com.suixingpay.xlmapp.enter</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>C2776K4LVU</string>
+				<key>name</key>
+				<string>Vbill Payment Co., Ltd.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
