@@ -5,10 +5,13 @@ import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {Calendar, CalendarList, Agenda} from 'react-native-calendars';
 import Day from '../component/day';
+import moment from 'moment';
 
+const today = moment(new Date()).format('YYYY-MM-DD');
 export default class View1 extends React.Component {
 
     state = {
+
         markedDates: {
             '2018-05-17': {disabled: true,userImage: true},
 
@@ -27,9 +30,10 @@ export default class View1 extends React.Component {
                     }}
                     onPress={() => {
                         const dates = this.state.markedDates;
+                        console.log('today',today);
                         const newDates = Object.assign({
                         }, dates,{
-                            '2018-05-18': {disabled: true,userImage: true},
+                            [today]: {disabled: true,userImage: true},
                         });
                         this.setState({
                             markedDates: newDates,

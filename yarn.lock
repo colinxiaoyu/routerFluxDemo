@@ -2523,6 +2523,10 @@ mobx@^3.3.1:
   version "3.5.1"
   resolved "http://registry.npm.taobao.org/mobx/download/mobx-3.5.1.tgz#8e682ec535cf44e04005b9e37e2df66acc975a42"
 
+moment@^2.19.2:
+  version "2.22.1"
+  resolved "http://registry.npm.taobao.org/moment/download/moment-2.22.1.tgz#529a2e9bf973f259c9643d237fda84de3a26e8ad"
+
 morgan@~1.6.1:
   version "1.6.1"
   resolved "http://registry.npm.taobao.org/morgan/download/morgan-1.6.1.tgz#5fd818398c6819cba28a7cd6664f292fe1c0bbf2"
