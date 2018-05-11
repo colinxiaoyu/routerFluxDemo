@@ -6,6 +6,7 @@ import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {Calendar, CalendarList, Agenda} from 'react-native-calendars';
 import Day from '../component/day';
 import moment from 'moment';
+import Agender from '../component/agender'
 
 const today = moment(new Date()).format('YYYY-MM-DD');
 export default class View1 extends React.Component {
@@ -44,8 +45,6 @@ export default class View1 extends React.Component {
                 </TouchableOpacity>
                 <Calendar
                     style={styles.calendar}
-                    current={'2018-05-09'}
-                    minDate={'2018-05-09'}
                     displayLoadingIndicator={false}
                     markingType={'period'}
                     theme={{
@@ -70,6 +69,7 @@ export default class View1 extends React.Component {
                     hideArrows={false}
                     dayComponent={Day}
                 />
+                <Agender/>
             </View>
         )
     }
